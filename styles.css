@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.live-demo {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.github {
+    background-color: #333;
+    color: white;
+}
+
+.contact-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.live-demo:hover {
+    background-color: #45a049;
+}
+
+.github:hover {
+    background-color: #555;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.clicked {
+    animation: buttonClick 0.3s ease;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* New CSS for Technologies Section */
+.tech-stack {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tech-stack h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tech-stack ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tech-stack ul li {
+    width: 40px;
+    height: 40px;
+}
+
+.tech-stack ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
